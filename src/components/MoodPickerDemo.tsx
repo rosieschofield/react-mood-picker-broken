@@ -1,17 +1,17 @@
 function MoodPickerDemo(): JSX.Element {
   let mood = "confused";
 
-  const changeMoodToHappy = () => {
+  const handleMoodChangeToHappy = () => {
     mood = "happy";
     console.log("😀 the value of mood is now", mood);
   };
 
-  const changeMoodToConfused = () => {
+  const handleMoodChangeToConfused = () => {
     mood = "confused";
     console.log("🤔 the value of mood is now", mood);
   };
 
-  const changeMoodToSad = () => {
+  const handleMoodChangeToSad = () => {
     mood = "sad";
     console.log("😢 the value of mood is now", mood);
   };
@@ -22,9 +22,9 @@ function MoodPickerDemo(): JSX.Element {
     <>
       <h1>Mood Picker Demo</h1>
       <p>Chosen mood: {mood}</p>
-      <button onClick={changeMoodToHappy}>😀</button>
-      <button onClick={changeMoodToConfused}>🤔</button>
-      <button onClick={changeMoodToSad}>😢</button>
+      <button onClick={handleMoodChangeToHappy}>😀</button>
+      <button onClick={handleMoodChangeToConfused}>🤔</button>
+      <button onClick={handleMoodChangeToSad}>😢</button>
     </>
   );
 }
