@@ -21,7 +21,7 @@ function MoodPickerDemo(): JSX.Element {
   return (
     <>
       <h1>Mood Picker Demo</h1>
-      <p>Chosen mood: {mood}</p>
+      <p>Chosen mood: {mood.toUpperCase()}</p>
       <button onClick={handleMoodChangeToHappy}>😀</button>
       <button onClick={handleMoodChangeToConfused}>🤔</button>
       <button onClick={handleMoodChangeToSad}>😢</button>
