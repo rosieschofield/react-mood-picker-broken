@@ -1,8 +1,8 @@
 function MoodPickerDemo(): JSX.Element {
-  let mood = 'confused';
+  let mood = "confused";
 
   const changeMoodToHappy = () => {
-    mood = 'happy';
+    mood = "happy";
     console.log("😀 the value of mood is now", mood);
   };
 
