@@ -1,0 +1,36 @@
+/* write css for the mood picker */
+
+.body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  /* move the buttons to the center of the page */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+  color: palevioletred;
+}
+
+.chosen-mood {
+  font-size: 1em;
+  text-align: center;
+}
+
+.btn {
+  margin: 0.5em;
+  padding: 0.25em 1em;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 1em;
+  /* display the buttons in a row */
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+}

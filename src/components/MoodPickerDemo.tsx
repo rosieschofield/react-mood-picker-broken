@@ -1,31 +1,40 @@
+import React from "react";
+import "./MoodPickerDemo.css";
+
 function MoodPickerDemo(): JSX.Element {
-  let mood = "confused";
+  const [mood, setMood] = React.useState("confused");
 
   const handleMoodChangeToHappy = () => {
-    mood = "happy";
+    setMood("happy");
     console.log("😀 the value of mood is now", mood);
   };
 
   const handleMoodChangeToConfused = () => {
-    mood = "confused";
+    setMood("confused");
     console.log("🤔 the value of mood is now", mood);
   };
 
   const handleMoodChangeToSad = () => {
-    mood = "sad";
+    setMood("sad");
     console.log("😢 the value of mood is now", mood);
   };
 
   console.log("Component is rendering with a mood value of", mood);
 
   return (
-    <>
-      <h1>Mood Picker Demo</h1>
-      <p>Chosen mood: {mood.toUpperCase()}</p>
-      <button onClick={handleMoodChangeToHappy}>😀</button>
-      <button onClick={handleMoodChangeToConfused}>🤔</button>
-      <button onClick={handleMoodChangeToSad}>😢</button>
-    </>
+    <div className="body">
+      <h1 className="title">Mood Picker Demo</h1>
+      <p className="chosen-mood">Chosen mood: {mood.toUpperCase()}</p>
+      <button className="btn" onClick={handleMoodChangeToHappy}>
+        😀
+      </button>
+      <button className="btn" onClick={handleMoodChangeToConfused}>
+        🤔
+      </button>
+      <button className="btn" onClick={handleMoodChangeToSad}>
+        😢
+      </button>
+    </div>
   );
 }
 
